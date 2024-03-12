@@ -1,0 +1,29 @@
+﻿<Window x:Class="Circus.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Circus"
+        mc:Ignorable="d"
+        Title="AdminWindow" Height="450" Width="800">
+    <Grid>
+        <Menu>
+            <MenuItem Header="_Users">
+                <MenuItem Header="_Register New User" Click="RegisterNewUser_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Animals">
+                <MenuItem Header="_Add New Animal" Click="AddNewAnimal_Click"/>
+                <MenuItem Header="_Add New Enclosure" Click="AddNewEnclosure_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Employees">
+                <MenuItem Header="_View Profiles" Click="ViewEmployeeProfiles_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Artist Schedule">
+                <MenuItem Header="_Add/Modify Schedule" Click="AddModifyArtistSchedule_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Staff Tasks">
+                <MenuItem Header="_Assign Tasks" Click="AssignStaffTasks_Click"/>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>

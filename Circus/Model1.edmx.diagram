@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="28c9c2a6dcbd4f56adc37729afdbaab9" Name="Diagram1">
+        <EntityTypeShape EntityType="circusModel.Animal" Width="1.5" PointX="5.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="circusModel.AnimalTraining" Width="1.5" PointX="7.5" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="circusModel.Artist" Width="1.5" PointX="8.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="circusModel.ArtistTraining" Width="1.5" PointX="5.25" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="circusModel.ArtistType" Width="1.5" PointX="6" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="circusModel.Gender" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="circusModel.Role" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="circusModel.sysdiagrams" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="circusModel.User" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <AssociationConnector Association="circusModel.FK_Animal_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="circusModel.FK_Animal_User" ManuallyRouted="false" />
+        <AssociationConnector Association="circusModel.FK_AnimalTraining_Animal" ManuallyRouted="false" />
+        <AssociationConnector Association="circusModel.FK_Artist_ArtistType" ManuallyRouted="false" />
+        <AssociationConnector Association="circusModel.FK_Artist_User" ManuallyRouted="false" />
+        <AssociationConnector Association="circusModel.FK_ArtistTraining_User" ManuallyRouted="false" />
+        <AssociationConnector Association="circusModel.FK_User_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
