@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Circus"
         mc:Ignorable="d"
-        Title="AdminWindow" Height="450" Width="800">
+        Title="AdminWindow" Height="301" Width="400">
     <Grid>
         <Menu>
             <MenuItem Header="_Users">
@@ -24,6 +24,12 @@
             <MenuItem Header="_Staff Tasks">
                 <MenuItem Header="_Assign Tasks" Click="AssignStaffTasks_Click"/>
             </MenuItem>
+            <Button x:Name="Exit_btn" Content="Exit" Click="Exit_Click" HorizontalAlignment="Left" Height="20"/>
+
         </Menu>
+        <Image Source="/clown shkiper.png" Stretch="UniformToFill" Width="208" Height="201" Margin="10,42,182,42"/>
+        <TextBlock HorizontalAlignment="Left"  Margin="226,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="202" Width="166">
+        Поставьте пять пожалуйста ❤️
+        </TextBlock>
     </Grid>
 </Window>

@@ -4,12 +4,12 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Хранилище circusModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Хранилище circusModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Animal">
           <Key>
             <PropertyRef Name="Animal_ID" />
           </Key>
-          <Property Name="Animal_ID" Type="int" Nullable="false" />
+          <Property Name="Animal_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Animal_Name" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Animal_Age" Type="int" Nullable="false" />
           <Property Name="Gender_ID" Type="int" Nullable="false" />
@@ -22,7 +22,7 @@
           <Key>
             <PropertyRef Name="AnimalTraining_ID" />
           </Key>
-          <Property Name="AnimalTraining_ID" Type="int" Nullable="false" />
+          <Property Name="AnimalTraining_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Animal_ID" Type="int" Nullable="false" />
           <Property Name="Number_Hours" Type="int" Nullable="false" />
           <Property Name="Start_Time" Type="date" Nullable="false" />
@@ -31,7 +31,7 @@
           <Key>
             <PropertyRef Name="Artist_ID" />
           </Key>
-          <Property Name="Artist_ID" Type="int" Nullable="false" />
+          <Property Name="Artist_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="User_ID" Type="int" Nullable="false" />
           <Property Name="ArtistType_ID" Type="int" Nullable="false" />
           <Property Name="Perfomance_Number" Type="int" />
@@ -40,7 +40,7 @@
           <Key>
             <PropertyRef Name="ArtistTraining" />
           </Key>
-          <Property Name="ArtistTraining" Type="int" Nullable="false" />
+          <Property Name="ArtistTraining" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="User_ID" Type="int" Nullable="false" />
           <Property Name="Start_Time" Type="date" Nullable="false" />
           <Property Name="Number_Hours" Type="int" Nullable="false" />
@@ -49,14 +49,14 @@
           <Key>
             <PropertyRef Name="ArtistType_ID" />
           </Key>
-          <Property Name="ArtistType_ID" Type="int" Nullable="false" />
+          <Property Name="ArtistType_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ArtistType_Name" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="Gender">
           <Key>
             <PropertyRef Name="Gender_ID" />
           </Key>
-          <Property Name="Gender_ID" Type="int" Nullable="false" />
+          <Property Name="Gender_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Gender_Name" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="Role">
@@ -80,7 +80,7 @@
           <Key>
             <PropertyRef Name="User_ID" />
           </Key>
-          <Property Name="User_ID" Type="int" Nullable="false" />
+          <Property Name="User_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Login" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
@@ -210,8 +210,7 @@
             <End Role="User" EntitySet="User" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="circusModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">

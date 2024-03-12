@@ -26,12 +26,14 @@ namespace Circus
 
         private void RegisterNewUser_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("test");
+            AddNewUserWindow addNewUserWindow = new AddNewUserWindow();
+            addNewUserWindow.Show();
         }
 
         private void AddNewAnimal_Click(object sender, RoutedEventArgs e)
         {
-
+            AddNewAnimalWindow addNewAnimalWindow = new AddNewAnimalWindow();
+            addNewAnimalWindow.Show();
         }
 
         private void AddNewEnclosure_Click(object sender, RoutedEventArgs e)
@@ -52,6 +54,13 @@ namespace Circus
         private void AssignStaffTasks_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
     }
 }
